@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Footer from "@/components/ui/footer";
 import LayoutClient from "@/components/layout-client"; // 👈 new wrapper
+import { Analytics } from "@vercel/analytics/next"
 
 const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <LayoutClient>{children}</LayoutClient>
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
