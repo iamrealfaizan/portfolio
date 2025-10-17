@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme (default) */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+
+  --border: 214.3 31.8% 91.4%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+}
+
+/* Dark theme */
+.dark {
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+
+  --card: 224 71% 5.5%;
+  --card-foreground: 213 31% 91%;
+
+  --border: 215 27.9% 16.9%;
+  --muted: 223 47% 7%;
+  --muted-foreground: 215.4 16.3% 56.9%;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+/* Your grid helper stays */
+.bg-grid {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.dark .bg-grid {
+  background-image: linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
+}
