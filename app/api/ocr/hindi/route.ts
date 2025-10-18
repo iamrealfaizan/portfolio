@@ -11,6 +11,7 @@ Extract all data points below and return one valid JSON object only "{responseTe
 If a checkbox is ticked, use true; if not ticked or absent, use false.
 If a text entry is blank, return an empty string "".
 No additional keys, no extra text, comments, Markdown, or code fences.
+also make sure that all the Hindi text values are returned in english script.
 
 {
   "studentDetails": {
