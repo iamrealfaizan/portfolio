@@ -16,7 +16,7 @@ const navItems = [
 
 export default function LayoutClient({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const hideNav = pathname.startsWith("/ocr");
+  const hideNav = pathname.startsWith("/ocr") || pathname.startsWith("/demo");
 
   return (
     <>
