@@ -147,7 +147,7 @@ export default function OCRLandingPage() {
       transition={{ delay: 0.35, duration: 0.8 }}
       className="mt-10 flex flex-wrap justify-center gap-4"
     >
-      <Link href="/demo/orc">
+      <Link href="/demo/ocr">
         <Button className="bg-indigo-600 hover:bg-indigo-700 transition-transform hover:scale-[1.02] shadow-lg shadow-indigo-500/30">
           <Play className="mr-2 h-5 w-5" /> Try Live Demo
         </Button>
